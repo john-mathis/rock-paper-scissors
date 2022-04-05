@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scicors</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript Script -->
+    <script src="app.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+
+    <section class="scoreboard__container">
+        <h3 class="scoreboard__heading">Choose your weapon</h3>
+        <h4 class="scoreboard__heading two">First to score 5 points wins the game</h4>
+
+
+
+        <div class="selected__weapon__container">
+            <div class="weapon__display p1">
+                <p class="player__display">❔</p>
+                <p>Player: <span class="player__score">0</span></p>
+            </div>
+
+
+            <div class="weapon__display computer">
+                <p class="computer__display">❔</p>
+                <p>Computer: <span class="computer__score">0</span></p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="weapon__choice__container">
+        <div class="rock">👊</div>
+        <div class="paper">✋</div>
+        <div class="scissors">✌</div>
+    </section>
+
+
+
+    <section class="modal">
+        <div class="modal__content">
+            <h3 class="game__winner"></h3>
+            <button class="play__again">Play Again</button>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>

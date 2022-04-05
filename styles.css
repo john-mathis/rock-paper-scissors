@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    min-height: 100vh;
+}
+
+
+/* Colors */
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+}
+
+
+/* Header */
+header {
+    font-family: "Bungee", "sans-serif";
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 1rem;
+    background-color: var(--header);
+    color: var(--primary-yellow);
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Scoreboard  */
+.scoreboard__container {
+    text-align: center;
+    font-family: "Patrick Hand", sans-serif;
+}
+
+.scoreboard__heading {
+    font-size: 2.5rem;
+    margin: .3rem 0;
+}
+
+.two {
+    font-size: 1.45rem;
+}
+
+
+/* Weapons Display */
+
+.selected__weapon__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0 0;
+}
+
+.weapon__display {
+    margin: 0 1rem;
+    font-size: 1.75rem;
+}
+
+.player__choice,
+.computer__choice {
+    font-size: 4rem;
+}
+
+
+/* Weapons contianer */
+
+.weapon__choice__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.rock,
+.paper,
+.scissors {
+    font-size: 4rem;
+    background-color: var(--secondary-dark-active);
+    padding: .5rem;
+    border-radius: 10px;
+    min-height: 6rem;
+    max-width: 7rem;
+    min-width: 7rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+    background-color: var(--secondary-dark-hover);
+}
+
+
+/* Modal */
+
+.modal {
+    /* background-color: red; */
+    font-family: "Patrick Hand", sans-serif;
+    min-width: 10rem;
+    min-height: 10rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+    position: relative;
+    z-index: 499;
+    background-color: red;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.game__winner {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.play__again {
+    font-size: 1.5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
